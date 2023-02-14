@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diposit & Withdraw</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <main>
+      <section
+        class="grid grid-cols-1 sm:w-full md:w-9/12 mx-auto mt-16 items-center px-2 md:px-0"
+      >
+        <div>
+          <h1 class="font-semibold text-3xl md:text-5xl text-center">
+            Welcome To My <span class="text-3xl md:text-5xl  text-transparent  bg-clip-text bg-gradient-to-r  from-indigo-500 via-purple-500 to-pink-500 font-semibold ">Bank-Deposit !!</span>
+          </h1>
+          <div
+            class="md:w-10/12 lg:w-8/12 w-11/12 mx-auto grid md:grid-cols-3 gap-5 mt-9"
+          >
+            <div class="bg-gradient-to-r  from-indigo-500 via-purple-500 to-pink-500 font-semibold rounded-lg shadow-md p-6">
+              <h3 class="text-xl font-semibold text-white">DEPOSIT</h3>
+              <p class="text-white text-3xl">
+                $<span id="deposit-total">00</span>
+              </p>
+            </div>
+            <div class="bg-gradient-to-r  from-indigo-500 via-purple-500 to-pink-500 font-semibold  rounded-lg shadow-md p-6">
+              <h3 class="text-xl font-semibold text-white">WITHDRAW</h3>
+              <p class="text-white text-3xl">
+                $<span id="withdraw-total">00</span>
+              </p>
+            </div>
+            <div class="bg-gradient-to-r  from-indigo-500 via-purple-500 to-pink-500 font-semibold rounded-lg shadow-md p-6">
+              <h3 class="text-xl font-semibold text-white">BLANCE</h3>
+              <p class="text-white text-3xl">
+                $<span id="balance-total">15050</span>
+              </p>
+            </div>
+          </div>
+          <div
+            class="md:w-10/12 lg:w-8/12 w-11/12 xl:w-8/12 mx-auto grid sm:grid-cols-2 gap-5 mt-10"
+          >
+            <div
+              class="bg-gradient-to-r from-teal-200 to-cyan-300 p-5 rounded grid grid-cols-1 items-center shadow-md"
+            >
+              <input
+                class="block w-full mx-auto mb-5 px-5 py-2 rounded-mdz focus:outline-violet-200 rounded-md"
+                type="number"
+                min="0"
+                placeholder="Deposite Amount"
+                id="deposit-input"
+              />
+              <button
+                class="mx-auto px-10 py-3 bg-gradient-to-r from-pink-500 via-indigo-500 to-purple-500 hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500 text-white hover:text-black rounded-md font-semibold  ease-linear duration-200"
+                id="deposit"
+              >
+                DEPOSIT
+              </button>
+            </div>
+            <div
+              class="bg-gradient-to-r from-teal-200 to-cyan-300  p-5 rounded grid grid-cols-1 items-center shadow-md"
+            >
+              <input
+                class="block w-full mx-auto mb-5 px-5 py-2 rounded-mdz focus:outline-violet-200 rounded-md"
+                type="number"
+                min="0"
+                placeholder="Withdraw Amount"
+                id="withdraw-input"
+              />
+              <button
+                class="hover:text-black mx-auto px-10 py-3 bg-gradient-to-r from-pink-500 via-indigo-500 to-purple-500 hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500 text-white  rounded-md font-semibold  ease-linear duration-200"
+                id="withdraw"
+              >
+                WITHDRAW
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Login ja -->
+    <script src="./js/deposite.js"></script>
+    <script src="./js/withdraw.js"></script>
+    <script src="./js/callingfunction.js"></script>
+  </body>
+</html>

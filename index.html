@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casino</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="">
+    <header>
+        <h1 class="text-5xl text-center mt-10">Welcome To My
+            <span class="font-semibold text-transparent  bg-clip-text bg-gradient-to-r  from-indigo-400 via-purple-400 to-pink-400"> Bank !!!</span>
+        </h1>
+    </header>
+    <main>
+        <section class="bg-teal-100 mt-12 p-9 w-9/12 mx-auto sm:w-11/12 max-sm:w-11/12 md:w-10/12 max-md:10/12  lg:w-9/12 rounded-xl bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400">
+            <h3 class="text-4xl mb-8 font-semibold text-center">Please Login</h3>
+            <div
+            class=" bg-violet-200 py-10 rounded-md shadow-md mt-4 grid grid-cols-1 "
+          >
+            <input
+              class="mx-auto placeholder-gray-600 focus:placeholder-gray-500 text-black block sm:w-11/12 max-sm:w-11/12 md:w-10/12 max-md:10/12 lg:w-8/12 mb-5 px-5 py-3 rounded-md focus:outline-violet-200 border-4 border-indigo-200 border-x-indigo-500 "
+              type="email"
+              placeholder="Enter Your Email Address"
+              id="email"
+            />
+            <input
+              class="mx-auto placeholder-gray-600 focus:placeholder-gray-500 block sm:w-11/12 max-sm:w-11/12 md:w-10/12 max-md:10/12 lg:w-8/12 mb-5 px-5 py-3 rounded-md focus:outline-violet-200 border-4 border-indigo-200 border-x-indigo-500"
+              type="password"
+              placeholder="Enter Your Password"
+              id="password"
+            />
+            <button
+              class=" mx-auto px-10 py-3 text-white rounded-md font-semibold ease-linear duration-200 bg-gradient-to-r from-pink-400 via-indigo-400 to-purple-400 hover:from-indigo-400 hover:via-purple-400 hover:to-pink-400 hover:text-black"
+              id="login"
+            >
+              Login
+            </button>
+          </div>
+        </section>
+    </main>
+
+    <script src="./js/login.js"></script>
+</body>
+</html>
