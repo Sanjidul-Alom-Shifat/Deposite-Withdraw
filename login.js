@@ -22,7 +22,7 @@ login.addEventListener("click", function () {
       alert("Wrong password");
       return;
     } else {
-      window.location.href = "/depositewithdraw.html";
+      window.location.href = "depositewithdraw.html";
     }
   }
   console.log("login success");
